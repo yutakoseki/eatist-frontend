@@ -2,9 +2,9 @@ import { PostType } from "@/types";
 import Link from "next/link";
 import React from "react";
 
-type Props = {
+interface Props {
     post: PostType;
-};
+}
 
 const Post = (props: Props) => {
     const { post } = props;
