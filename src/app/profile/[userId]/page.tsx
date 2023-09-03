@@ -3,7 +3,6 @@ import apiClient from "@/lib/apiClient";
 import { PostType, Profile } from "@/types";
 import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
-import { profile } from "console";
 
 interface PageProps {
     params: {
