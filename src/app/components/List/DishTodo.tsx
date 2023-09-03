@@ -1,9 +1,7 @@
 "use client";
 
-import { deleteTodo, editTodo } from "@/api";
 import apiClient from "@/lib/apiClient";
 import { Task } from "@/types";
-import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
 interface TodoProps {

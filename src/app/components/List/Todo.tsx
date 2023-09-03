@@ -1,6 +1,5 @@
 "use client";
 
-import { deleteTodo, editTodo } from "@/api";
 import apiClient from "@/lib/apiClient";
 import { Task } from "@/types";
 import Link from "next/link";
