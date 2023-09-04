@@ -10,11 +10,11 @@ const Observation = () => {
     const [deleteItem, setDeleteItem] = useState<number>(0);
     useEffect(() => {
         setCount(count + 1);
-    },[addItem, updateItem, deleteItem]);
+    }, [addItem, updateItem, deleteItem]);
     return (
         <>
-            <AddTask setAddItem={setAddItem}/>
-            <List count={count} setUpdateItem={setUpdateItem} setDeleteItem={setDeleteItem}/>
+            <AddTask setAddItem={setAddItem} />
+            <List count={count} setUpdateItem={setUpdateItem} setDeleteItem={setDeleteItem} />
         </>
     );
 };

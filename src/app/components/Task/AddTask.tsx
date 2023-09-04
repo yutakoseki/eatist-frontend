@@ -27,8 +27,8 @@ const AddTask = ({ setAddItem }: Props) => {
     };
     return (
         <form className="mb-4 space-y-3" onSubmit={handleSubmit}>
-            <input type="text" className="w-full border px-4 rounded-lg focus:outline-none focus:border-blue-400" onChange={(e: ChangeEvent<HTMLInputElement>) => setTaskTitle(e.target.value)} value={tastTitle} placeholder="New Dish" />
-            <button className="w-full px-4 py-2 bg-blue-500 text-white rounded transform hover:bg-blue-400 hover:scale-95 duration-200">Add Favorite Dish</button>
+            <input type="text" className="w-full h-10 border px-4 rounded-lg focus:outline-none focus:border-gray-400" onChange={(e: ChangeEvent<HTMLInputElement>) => setTaskTitle(e.target.value)} value={tastTitle} placeholder="New Dish" />
+            <button className="w-full px-4 py-2 bg-secondary text-white rounded transform hover:bg-primary hover:scale-95 duration-200">Add Favorite Dish</button>
         </form>
     );
 };

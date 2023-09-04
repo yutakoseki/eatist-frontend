@@ -22,11 +22,11 @@ const config: Config = {
                             foreground: "#ffffff",
                         },
                         primary: {
-                            DEFAULT: "#00008b",
+                            DEFAULT: "#EFAA52",
                             foreground: "#ffffff",
                         },
                         secondary: {
-                            DEFAULT: "#8b008b",
+                            DEFAULT: "#E7CC8F",
                             foreground: "#ffffff",
                         },
                         success: {
@@ -34,7 +34,7 @@ const config: Config = {
                             foreground: "#ffffff",
                         },
                         warning: {
-                            DEFAULT: "#a0522d",
+                            DEFAULT: "#F8F3E6",
                             foreground: "#ffffff",
                         },
                         danger: {
@@ -50,24 +50,24 @@ const config: Config = {
                             foreground: "#ffffff",
                         },
                         primary: {
-                            DEFAULT: "#00008b",
+                            DEFAULT: "#6C4F70",
                             foreground: "#ffffff",
                         },
                         secondary: {
-                            DEFAULT: "#8b008b",
+                            DEFAULT: "#757081",
                             foreground: "#ffffff",
                         },
                         success: {
-                            DEFAULT: "#008000",
-                            foreground: "#ffffff",
+                            DEFAULT: "#193446",
+                            foreground: "#193446",
                         },
                         warning: {
-                            DEFAULT: "#a0522d",
+                            DEFAULT: "#D1D3CF",
                             foreground: "#ffffff",
                         },
                         danger: {
-                            DEFAULT: "#b22222",
-                            foreground: "#ffffff",
+                            DEFAULT: "#AB3E16",
+                            foreground: "#AB3E16",
                         },
                     },
                 },
