@@ -6,6 +6,7 @@ import apiClient from "@/lib/apiClient";
 
 interface Props {
     count: number;
+    setCheckItem: (value: boolean) => void;
     setUpdateItem: (value: string) => void;
     setDeleteItem: (value: number) => void;
     params: {
@@ -13,7 +14,7 @@ interface Props {
     };
 }
 
-const DishList = ({ count, setUpdateItem, setDeleteItem, params }: Props) => {
+const DishList = ({ count,setCheckItem, setUpdateItem, setDeleteItem, params }: Props) => {
     const [dish, setDish] = useState<Dish[]>([]);
 
     useEffect(() => {
@@ -35,7 +36,7 @@ const DishList = ({ count, setUpdateItem, setDeleteItem, params }: Props) => {
     return (
         <ul className="space-y-3">
             {dish.map((todo: Dish) => {
-                return <DishTodo key={todo.id} todo={todo} setUpdateItem={setUpdateItem} setDeleteItem={setDeleteItem} />;
+                return <DishTodo key={todo.id} todo={todo} setCheckItem={setCheckItem} setUpdateItem={setUpdateItem} setDeleteItem={setDeleteItem} />;
             })}
         </ul>
     );

@@ -7,15 +7,17 @@ import { DishId } from "@/types";
 const DishObservation = ({params}:DishId) => {
     const [count, setCount] = useState(0);
     const [addItem, setAddItem] = useState<string>("");
+    const [checkItem, setCheckItem] = useState<boolean>(false);
     const [updateItem, setUpdateItem] = useState<string>("");
     const [deleteItem, setDeleteItem] = useState<number>(0);
     useEffect(() => {
         setCount(count + 1);
-    },[addItem, updateItem, deleteItem]);
+    },[addItem, updateItem, deleteItem,checkItem]);
+
     return (
         <>
             <DishAddTask setAddItem={setAddItem} params={params}/>
-            <DishList count={count} setUpdateItem={setUpdateItem} setDeleteItem={setDeleteItem} params={params}/>
+            <DishList count={count} setCheckItem={setCheckItem} setUpdateItem={setUpdateItem} setDeleteItem={setDeleteItem} params={params}/>
         </>
     );
 };
