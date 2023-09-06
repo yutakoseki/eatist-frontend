@@ -4,7 +4,6 @@ import { CheckBadgeIcon, CheckCircleIcon, CheckIcon, LockClosedIcon, MinusCircle
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import {Pencil} from "../icons/index"
 
 interface TodoProps {
     todo: Task;
@@ -86,7 +85,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                 handleSave();
                             }}
                         >
-                            <CheckIcon className="p-1 text-primary" />
+                            <img src="public/pencil.svg" className="p-1 text-primary" />
                         </Button>
                     ) : (
                         // 編集中ではない
@@ -101,7 +100,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleCheck();
                                 }}
                             >
-                                <CheckCircleIcon className="text-orange-500" />
+                                <img src="/public/pencil.svg" className="p-1 text-primary" />
                             </Button>
                             <Button
                                 isIconOnly
@@ -113,7 +112,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleEdit();
                                 }}
                             >
-                                <Pencil className="p-2 fill-orange-500" />
+                                <img src="public/pencil.svg" className="p-1 text-primary" />
                             </Button>
                             <Button
                                 isIconOnly
@@ -125,7 +124,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleDelete();
                                 }}
                             >
-                                <XMarkIcon className="p-1 text-orange-500" />
+                                <img src="/pencil.svg" className="p-1 text-primary" />
                             </Button>
                         </>
                     )}
