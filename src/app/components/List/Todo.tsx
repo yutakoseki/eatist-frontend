@@ -4,7 +4,7 @@ import { CheckBadgeIcon, CheckCircleIcon, CheckIcon, LockClosedIcon, MinusCircle
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import Pencil from "public/pencil.svg";
+import {Pencil} from "../icons/index"
 
 interface TodoProps {
     todo: Task;

@@ -6,13 +6,20 @@ const nextConfig = {
             use: [
                 {
                     loader: "@svgr/webpack",
+                    options: {
+                        svgoConfig: {
+                            plugins: [
+                                {
+                                    name: "removeViewBox",
+                                    active: false,
+                                },
+                            ],
+                        },
+                    },
                 },
             ],
         });
         return config;
-    },
-    images: {
-        disableStaticImages: true, // importした画像の型定義設定を無効にする
     },
     images: {
         domains: ["raw.githubusercontent.com", "swiperjs.com", "github.com"], // 必要に応じて他のドメインも追加
