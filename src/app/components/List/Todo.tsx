@@ -100,7 +100,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleCheck();
                                 }}
                             >
-                                <CheckCircleIcon className="text-primary" />
+                                <CheckCircleIcon className="text-white" />
                             </Button>
                             <Button
                                 isIconOnly
@@ -112,23 +112,22 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleEdit();
                                 }}
                             >
-                                <PencilIcon className="p-2 text-primary" />
+                                <PencilIcon className="p-2 text-white" />
+                            </Button>
+                            <Button
+                                isIconOnly
+                                size="sm"
+                                color="default"
+                                aria-label="done"
+                                onClick={(e) => {
+                                    preventLinkNavigation(e);
+                                    handleDelete();
+                                }}
+                            >
+                                <XMarkIcon className="p-1 text-white" />
                             </Button>
                         </>
                     )}
-
-                    <Button
-                        isIconOnly
-                        size="sm"
-                        color="default"
-                        aria-label="done"
-                        onClick={(e) => {
-                            preventLinkNavigation(e);
-                            handleDelete();
-                        }}
-                    >
-                        <XMarkIcon className="p-1 text-danger" />
-                    </Button>
                 </div>
             </li>
         </Link>
