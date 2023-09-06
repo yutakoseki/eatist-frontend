@@ -1,10 +1,9 @@
 import apiClient from "@/lib/apiClient";
 import { Task } from "@/types";
-import { CheckBadgeIcon, CheckCircleIcon, CheckIcon, LockClosedIcon, MinusCircleIcon, PencilIcon, XCircleIcon, XMarkIcon } from "@heroicons/react/24/solid";
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import Check from "/check.svg";
+
 interface TodoProps {
     todo: Task;
     setCheckItem: (value: number) => void;
@@ -100,7 +99,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleCheck();
                                 }}
                             >
-                                <Check className="p-1 text-primary" />
+                                <img src="/pencil.svg" className="p-1 text-primary" />
                             </Button>
                             <Button
                                 isIconOnly
