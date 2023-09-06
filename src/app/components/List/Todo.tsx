@@ -100,7 +100,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleCheck();
                                 }}
                             >
-                                <CheckCircleIcon className="text-white" />
+                                <CheckCircleIcon className="text-orange-500" />
                             </Button>
                             <Button
                                 isIconOnly
@@ -112,7 +112,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleEdit();
                                 }}
                             >
-                                <PencilIcon className="p-2 text-white" />
+                                <PencilIcon className="p-2 text-orange-500" />
                             </Button>
                             <Button
                                 isIconOnly
@@ -124,7 +124,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleDelete();
                                 }}
                             >
-                                <XMarkIcon className="p-1 text-white" />
+                                <XMarkIcon className="p-1 text-orange-500" />
                             </Button>
                         </>
                     )}
