@@ -86,7 +86,7 @@ const DishTodo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProp
                             handleSave();
                         }}
                     >
-                        <CheckIcon className="p-1" />
+                        <img src="/save.svg" className="p-1 text-primary" />
                     </Button>
                 </div>
             ) : (
@@ -101,7 +101,7 @@ const DishTodo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProp
                                 handleEdit();
                             }}
                         >
-                            <PencilIcon className="p-2 text-primary " />
+                            <img src="/pencil.svg" className="p-2 text-primary" />
                         </Button>
                         <Button
                             className="w-1/2"
@@ -112,7 +112,7 @@ const DishTodo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProp
                                 handleDelete();
                             }}
                         >
-                            <XMarkIcon className="p-1 text-warning" />
+                            <img src="/delete.svg" className="p-1 text-primary" />
                         </Button>
                     </div>
                 </>

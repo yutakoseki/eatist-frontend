@@ -111,7 +111,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleEdit();
                                 }}
                             >
-                                <img src="/pencil.svg" className="p-1 text-primary" />
+                                <img src="/pencil.svg" className="p-2 text-primary" />
                             </Button>
                             <Button
                                 isIconOnly
