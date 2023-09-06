@@ -25,14 +25,11 @@ const nextConfig = {
         domains: ["raw.githubusercontent.com", "swiperjs.com", "github.com"], // 必要に応じて他のドメインも追加
     },
 };
-const withPWA = require("next-pwa");
 
-module.exports = withPWA({
-    pwa: {
-        dest: "public",
-        register: true,
-        skipWaiting: true,
-    },
+const withPWA = require("next-pwa")({
+    dest: "public",
+    register: true,
+    skipWaiting: true,
 });
 
-module.exports = nextConfig;
+module.exports = Object.assign({}, withPWA, nextConfig);
