@@ -84,7 +84,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                 handleSave();
                             }}
                         >
-                            <img src="public/pencil.svg" className="p-1 text-primary" />
+                            <img src="/save.svg" className="p-1 text-primary" />
                         </Button>
                     ) : (
                         // 編集中ではない
@@ -99,7 +99,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleCheck();
                                 }}
                             >
-                                <img src="/pencil.svg" className="p-1 text-primary" />
+                                <img src="/check.svg" className="p-1 text-primary" />
                             </Button>
                             <Button
                                 isIconOnly
@@ -123,7 +123,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleDelete();
                                 }}
                             >
-                                <img src="/pencil.svg" className="p-1 text-primary" />
+                                <img src="/delete.svg" className="p-1 text-primary" />
                             </Button>
                         </>
                     )}
