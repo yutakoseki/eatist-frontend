@@ -15,8 +15,12 @@ const Observation = () => {
     }, [addItem, checkItem, updateItem, deleteItem, completeItem]);
     return (
         <>
-            <AddTask setAddItem={setAddItem} />
-            <List count={count} setCheckItem={setCheckItem} setUpdateItem={setUpdateItem} setDeleteItem={setDeleteItem} setCompleteItem={setCompleteItem} />
+            <div className="h-1/4">
+                <AddTask setAddItem={setAddItem} />
+            </div>
+            <div className="3/4">
+                <List count={count} setCheckItem={setCheckItem} setUpdateItem={setUpdateItem} setDeleteItem={setDeleteItem} setCompleteItem={setCompleteItem} />
+            </div>
         </>
     );
 };

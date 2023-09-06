@@ -5,6 +5,10 @@ const config: Config = {
     content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}", "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"],
     theme: {
         extend: {
+            // tailwind側のカラー定義カスタマイズ
+            colors: {
+                darkgray: "#f97316",
+            },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
                 "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
@@ -16,6 +20,7 @@ const config: Config = {
         nextui({
             themes: {
                 light: {
+                    // NextUI側のカラー定義カスタマイズ
                     colors: {
                         default: {
                             DEFAULT: "#ffffff",
@@ -38,6 +43,10 @@ const config: Config = {
                             foreground: "#ffffff",
                         },
                         danger: {
+                            DEFAULT: "#b22222",
+                            foreground: "#ffffff",
+                        },
+                        tertiary: {
                             DEFAULT: "#b22222",
                             foreground: "#ffffff",
                         },
@@ -68,6 +77,10 @@ const config: Config = {
                         danger: {
                             DEFAULT: "#AB3E16",
                             foreground: "#282828",
+                        },
+                        tertiary: {
+                            DEFAULT: "#101010",
+                            foreground: "#ffffff",
                         },
                     },
                 },

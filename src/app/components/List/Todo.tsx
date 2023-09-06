@@ -73,7 +73,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
     return (
         <Link href={`/dish/${todo.id}`}>
             <li key={todo.id} className="flex justify-between p-4 border-l-4 border-primary rounded shadow">
-                {isEditing ? <input ref={ref} type="text" className="mr-2 py-1 px-2 rounded border-gray-400 border" value={editedTaskTitle} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setIsEditedTaskTitle(e.target.value)} /> : <span>{todo.text}</span>}
+                {isEditing ? <input ref={ref} type="text" className="mr-2 py-1 px-2 rounded border-gray-400 border" value={editedTaskTitle} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setIsEditedTaskTitle(e.target.value)} /> : <span className="w-40 truncate">{todo.text}</span>}
                 <div>
                     {isEditing ? (
                         // 編集中
@@ -88,7 +88,6 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                             }}
                         >
                             {theme === "light" ? <img src="/save.svg" className="p-1" /> : <img src="/savedark.svg" className="p-1" />}
-                            {/* <img src="/save.svg" className="p-1 text-primary" /> */}
                         </Button>
                     ) : (
                         // 編集中ではない
@@ -103,7 +102,6 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleCheck();
                                 }}
                             >{theme === "light" ? <img src="/check.svg" className="p-1" /> : <img src="/checkdark.svg" className="p-1" />}
-                                {/* <img src="/check.svg" className="p-1 text-primary" /> */}
                             </Button>
                             <Button
                                 isIconOnly
@@ -116,7 +114,6 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                 }}
                             >
                                 {theme === "light" ? <img src="/pencil.svg" className="p-1" /> : <img src="/pencildark.svg" className="p-1" />}
-                                {/* <img src="/pencil.svg" className="p-1" /> */}
                             </Button>
                             <Button
                                 isIconOnly
@@ -129,7 +126,6 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                 }}
                             >
                                 {theme === "light" ? <img src="/delete.svg" className="p-1" /> : <img src="/deletedark.svg" className="p-1" />}
-                                {/* <img src="/delete.svg" className="p-1 text-primary" /> */}
                             </Button>
                         </>
                     )}
