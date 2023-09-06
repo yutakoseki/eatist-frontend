@@ -4,7 +4,7 @@ import { CheckBadgeIcon, CheckCircleIcon, CheckIcon, LockClosedIcon, MinusCircle
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import Pencile from "public/SVG/pencile.svg";
+import Pencil from "client/public/pencil.svg";
 
 interface TodoProps {
     todo: Task;
@@ -113,7 +113,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleEdit();
                                 }}
                             >
-                                <Pencile className="p-2 fill-orange-500" />
+                                <Pencil className="p-2 fill-orange-500" />
                             </Button>
                             <Button
                                 isIconOnly
