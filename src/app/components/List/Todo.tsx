@@ -113,7 +113,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleEdit();
                                 }}
                             >
-                                <Pencile className="p-2 text-orange-500" />
+                                <Pencile className="p-2 fill-orange-500" />
                             </Button>
                             <Button
                                 isIconOnly
