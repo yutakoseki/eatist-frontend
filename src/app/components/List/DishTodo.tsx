@@ -59,7 +59,7 @@ const DishTodo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProp
     };
 
     return (
-        <li key={todo.id} className="p-4 bg-white border-l-4 border-primary rounded shadow w-full">
+        <li key={todo.id} className="p-4 border-l-4 border-primary rounded shadow w-full">
             <div className="mb-2 flex justify-center font-bold text-gray-500">{isEditing ? <input ref={ref} type="text" className="py-1 px-2 rounded border-primary border w-full" value={editedTitle} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setIsEditedTitle(e.target.value)} /> : <span>{todo.title}</span>}</div>
 
             <div className="mb-2 flex justify-center">
