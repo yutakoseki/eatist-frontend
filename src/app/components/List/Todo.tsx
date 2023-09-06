@@ -4,7 +4,7 @@ import { CheckBadgeIcon, CheckCircleIcon, CheckIcon, LockClosedIcon, MinusCircle
 import { Button } from "@nextui-org/react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-
+import Check from "/check.svg";
 interface TodoProps {
     todo: Task;
     setCheckItem: (value: number) => void;
@@ -94,13 +94,13 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                 isIconOnly
                                 size="sm"
                                 color="default"
-                                aria-label="done"
+                                aria-label="check"
                                 onClick={(e) => {
                                     preventLinkNavigation(e);
                                     handleCheck();
                                 }}
                             >
-                                <img src="/public/pencil.svg" className="p-1 text-primary" />
+                                <Check className="p-1 text-primary" />
                             </Button>
                             <Button
                                 isIconOnly
@@ -112,7 +112,7 @@ const Todo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProps) =
                                     handleEdit();
                                 }}
                             >
-                                <img src="public/pencil.svg" className="p-1 text-primary" />
+                                <img src="/pencil.svg" className="p-1 text-primary" />
                             </Button>
                             <Button
                                 isIconOnly
