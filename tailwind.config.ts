@@ -46,28 +46,28 @@ const config: Config = {
                 dark: {
                     colors: {
                         default: {
-                            DEFAULT: "#808080",
-                            foreground: "#ffffff",
+                            DEFAULT: "#000000",
+                            foreground: "#282828",
                         },
                         primary: {
                             DEFAULT: "#6C4F70",
-                            foreground: "#ffffff",
+                            foreground: "#282828",
                         },
                         secondary: {
                             DEFAULT: "#757081",
-                            foreground: "#ffffff",
+                            foreground: "#282828",
                         },
                         success: {
                             DEFAULT: "#193446",
-                            foreground: "#193446",
+                            foreground: "#282828",
                         },
                         warning: {
-                            DEFAULT: "#D1D3CF",
-                            foreground: "#ffffff",
+                            DEFAULT: "#ffffff",
+                            foreground: "#282828",
                         },
                         danger: {
                             DEFAULT: "#AB3E16",
-                            foreground: "#AB3E16",
+                            foreground: "#282828",
                         },
                     },
                 },

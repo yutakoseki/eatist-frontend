@@ -78,7 +78,7 @@ const DishTodo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProp
                 // 編集中
                 <div className="flex justify-center bg-warning rounded">
                     <Button
-                        className="w-full"
+                        className="w-full text-default text-xl"
                         color="primary"
                         aria-label="done"
                         onClick={(e) => {
@@ -86,14 +86,14 @@ const DishTodo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProp
                             handleSave();
                         }}
                     >
-                        <img src="/save.svg" className="p-1 text-primary" />
+                        save
                     </Button>
                 </div>
             ) : (
                 <>
                     <div className="flex justify-between rounded">
                         <Button
-                            className="w-1/2"
+                            className="w-1/2 text-default text-xl"
                             color="warning"
                             aria-label="done"
                             onClick={(e) => {
@@ -101,10 +101,10 @@ const DishTodo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProp
                                 handleEdit();
                             }}
                         >
-                            <img src="/pencil.svg" className="p-2 text-primary" />
+                            edit
                         </Button>
                         <Button
-                            className="w-1/2"
+                            className="w-1/2 text-default text-xl"
                             color="primary"
                             aria-label="done"
                             onClick={(e) => {
@@ -112,7 +112,7 @@ const DishTodo = ({ todo, setCheckItem, setUpdateItem, setDeleteItem }: TodoProp
                                 handleDelete();
                             }}
                         >
-                            <img src="/delete.svg" className="p-1 text-primary" />
+                            delete
                         </Button>
                     </div>
                 </>
