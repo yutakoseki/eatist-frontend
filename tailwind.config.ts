@@ -47,7 +47,7 @@ const config: Config = {
                             foreground: "#ffffff",
                         },
                         tertiary: {
-                            DEFAULT: "#b22222",
+                            DEFAULT: "#ffffff",
                             foreground: "#ffffff",
                         },
                     },
