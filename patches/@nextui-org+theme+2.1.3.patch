@@ -1,0 +1,12 @@
+diff --git a/node_modules/@nextui-org/theme/dist/colors/types.d.ts b/node_modules/@nextui-org/theme/dist/colors/types.d.ts
+index 7e517a7..662c0a7 100644
+--- a/node_modules/@nextui-org/theme/dist/colors/types.d.ts
++++ b/node_modules/@nextui-org/theme/dist/colors/types.d.ts
+@@ -30,6 +30,7 @@ type ThemeColors = BaseColors & {
+     success: ColorScale;
+     warning: ColorScale;
+     danger: ColorScale;
++    tertiary: ColorScale;
+ };
+ type SemanticBaseColors = {
+     light: BaseColors;

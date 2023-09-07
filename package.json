@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch src/app/data/todos.json --port 3001"
+    "json-server": "json-server --watch src/app/data/todos.json --port 3001",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
@@ -39,6 +40,7 @@
     "@svgr/webpack": "^8.1.0",
     "@types/uuid": "^9.0.3",
     "eslint": "^8.48.0",
-    "eslint-plugin-next": "^0.0.0"
+    "eslint-plugin-next": "^0.0.0",
+    "patch-package": "^8.0.0"
   }
 }
